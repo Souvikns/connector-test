@@ -17,10 +17,5 @@ paths:
         "200":
           description: "Say hello"
           content: {}
-  /space/rockets/{rocketId}:
-    get:
-      operationId: rocketsOne
-      responses:
-        "200":
-          description: "Get a rocket"
-          content: {}
+  /rockets/{rocketId}:
+    $ref: "./src/services/spaceX/spec.yaml"

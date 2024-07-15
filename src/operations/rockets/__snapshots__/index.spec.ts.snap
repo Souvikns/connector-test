@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rockets Operation should return a 200 response: Promise {} 1`] = `
+Object {
+  "body": Object {
+    "company": "SpaceX",
+    "cost_per_launch": Object {
+      "amount": 90000000,
+      "currency": "USD",
+    },
+    "country": "United States",
+    "id": "5e9d0d95eda69974db09d1ed",
+    "main_image": "https://farm5.staticflickr.com/4599/38583829295_581f34dd84_b.jpg",
+  },
+  "status": 200,
+}
+`;

@@ -1,0 +1,16 @@
+get:
+  operationId: rockets
+  parameters:
+    - name: rocketId
+      required: true
+      in: path
+      schema:
+        type: string
+        example: "5e9d0d96eda699382d09d1ee"
+  responses:
+    "200":
+      description: "Get Rockt Details"
+      content:
+        appication/json:
+          schema:
+            $ref: ../../../unify/Rocket.json
