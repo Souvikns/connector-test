@@ -15,12 +15,12 @@ export class SpaceXService {
       )
       const isValid = this.validator.validate(data)
       if (!isValid) {
-        throw new RocketsError('Invalid Response', 500)
+        throw new RocketsError('Invalid SpaceX API Response', 500)
       }
       const rocket = this.mapRocketResponse(data)
       return rocket
     } catch (error) {
-      throw new RocketsError('Invalid spaceX API response', 500)
+      throw new RocketsError('Invalid SpaceX API response', 500)
     }
   }
 
